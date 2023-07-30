@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<html>
+    <head>
+        <title>submitting Staff Availability</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style4.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap" rel="stylesheet">
+         <style>
+        body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 100;
+}
+
+form {
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+
+
+         </style>
+      </head>
+      <body>  
+      
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="checkbox" id="person1" name="persons" value="ABHINAV">
+            <label for="person1">ABHINAV</label><br>
+            
+            <input type="checkbox" id="person2" name="persons" value="ARJUN J">
+            <label for="person2">ARJUN J</label><br>
+            
+            <input type="checkbox" id="person3" name="persons" value="BALU S VARMA">
+            <label for="person3">BALU S VARMA</label><br>
+            
+            <input type="checkbox" id="person4" name="persons" value="CYRIAC JOSEPH">
+            <label for="person4">CYRIAC JOSEPH</label><br>
+            
+            <input type="checkbox" id="person5" name="persons" value="GAYATHRI JAYAKUMAR">
+            <label for="person5">GAYATHRI JAYAKUMAR</label><br>
+
+            <input type="checkbox" id="person1" name="persons" value="HARITHIKA V S">
+            <label for="person1">HARITHIKA V S</label><br>
+            
+            <input type="checkbox" id="person2" name="persons" value="SEBASTIAN THOMAS">
+            <label for="person2">SEBASTIAN THOMAS</label><br>
+            
+            <input type="checkbox" id="person3" name="persons" value="THOMAS PHILIP">
+            <label for="person3">THOMAS PHILIP</label><br>
+            
+            <input type="checkbox" id="person4" name="persons" value="TONY VARGHESE">
+            <label for="person4">TONY VARGHESE</label><br>
+            
+            <input type="checkbox" id="person5" name="persons" value="VIJAY SUDARSHAN">
+            <label for="person5">VIJAY SUDARSHAN</label><br>
+            
+            <button type="submit">Submit</button>
+          </form>
+
+    </body>
+</html>
+{% endblock %}

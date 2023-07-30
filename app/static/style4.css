@@ -1,0 +1,48 @@
+/* styles.css */
+/* CSS for the table structure */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("pexels-olia-danilevich-5088017.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  font-family: 'EB Garamond', serif;
+}
+/* Styles for the navigation bar */
+header {
+  background-color: #333;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+
+

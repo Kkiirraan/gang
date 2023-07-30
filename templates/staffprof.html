@@ -1,0 +1,49 @@
+{% extends 'staffbase.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="{% static 'style7.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+  <h1>Welcome {{ fname }}....!</h1>
+  <div class="center">
+  <div class="profile">
+    <h2>Profile</h2>
+    <div class="profile-item">
+      <span class="profile-label">First Name:</span>
+      <span class="profile-value">{{ fname }}</span>
+    </div>
+    <div class="profile-item">
+      <span class="profile-label">Last Name:</span>
+      <span class="profile-value">{{ lname }}</span>
+    </div>
+    <div class="profile-item">
+      <span class="profile-label">Phone: </span>
+      <span class="profile-value">{{ phno }}</span>
+    </div>
+    <div class="profile-item">
+      <span class="profile-label">Email: </span>
+      <span class="profile-value">{{ email }}</span>
+    </div>
+    <div class="profile-item">
+      <span class="profile-label">username: </span>
+      <span class="profile-value">{{ uname }}</span>
+    </div>
+    <div class="profile-item">
+      <span class="profile-label">Department: </span>
+      <span class="profile-value">{{ dep }}</span>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,80 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("pexels-olia-danilevich-5088017.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'EB Garamond', serif;
+}
+header {
+    background-color: #333;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+    align-items: center;
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    padding: 1px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+.container {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 2px solid black;
+  background-color: #e0e0e0;
+  padding: 30px;
+}
+
+th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+
+textarea {
+width: 100%;
+height: 100px;
+margin-top: 10px;
+padding: 5px;
+}
+
+.submit-btn {
+margin-top: 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>submitting Staff Availability</title>
+  <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="">PROFILE</a></li>
+        <li><a href="staffavail.html">AVAILABILITY</a></li>
+        <li><a href="staffnewtt.html">NEW TIMETABLE</a></li>
+        <li><a href="staffassign.html">ASSIGNMENTS</a></li>
+        <li><a href="stafftopic.html">TOPICS</a></li>
+        <li><a href="staffabs.html">ABSTENTEES</a></li>
+        <li><a href="home.html">LOGOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+  <div class="center">
+    <h2>MARK AVAILABILITY</h2>
+    </div>
+    <form action="" method="post">
+      {% csrf_token %}
+  <table>
+    <tr>
+      <th>Subject</th>
+      <th>Availability</th>
+    </tr>
+    <tr>
+      <td>FIRST HOUR : </td>
+      <td>
+        <label>
+          <input type="radio" name="first" value="yes"> Yes
+        </label>
+        <label>
+          <input type="radio" name="first" value="no"> No
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>SECOND HOUR : </td>
+      <td>
+        <label>
+          <input type="radio" name="seocnd" value="yes"> Yes
+        </label>
+        <label>
+          <input type="radio" name="second" value="no"> No
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>THIRD HOUR : </td>
+      <td>
+        <label>
+          <input type="radio" name="third" value="yes"> Yes
+        </label>
+        <label>
+          <input type="radio" name="third" value="no"> No
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>FOURTH HOUR : </td>
+      <td>
+        <label>
+          <input type="radio" name="fourth" value="yes"> Yes
+        </label>
+        <label>
+          <input type="radio" name="fourth" value="no"> No
+        </label>
+      </td>
+    </tr>
+  </table>
+  <button type="submit">Submit</button>
+  <div class="center">
+    <h4>[NOTE:KINDLY MARK "YES" IF YOU ARE THERE IN THE COLLEGE EVEN IF IT IS A FREE PERIOD, ELSE MARK NO!]</h4>
+    </div>
+  </form>
+</body>
+
+</html>

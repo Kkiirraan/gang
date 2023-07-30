@@ -1,0 +1,138 @@
+header {
+  background-color: #dcc39cb8;
+  padding: 0 px;
+  justify-content: center;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  align-items: center;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 5px 50px;
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+body {
+  background-image: url("pexels-olia-danilevich-5088017.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 0px 4px 8px rgba(0, 7, 11, 0.627);
+  border-radius: 10px;
+}
+
+span{
+  color: #fff;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+header{
+  color: #824242b6;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+}
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  height: 45px;
+  width: 87%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: black;
+  padding: 0 0 0 42px;
+  background: rgb(236, 202, 166) ;
+}
+
+
+i{
+  position: relative;
+  top: 17px;
+  left: -140px;
+  color: rgb(60, 52, 52);
+}
+
+::-webkit-input-placeholder{
+  color: #fff;
+}
+
+.submit{
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  width: 100%;
+  background: rgba(225, 255, 255, 0.7);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit:hover{
+  box-shadow: 1px 5px 7 1px rgba(0, 0, 0, 0.2);
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.left{
+  display: flex;
+  color: black;
+}
+
+label a{
+  color: black;
+  text-decoration: none;
+}

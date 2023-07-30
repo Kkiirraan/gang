@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+  <body>
+    <form action="" method="POST">
+        {% csrf_token %}
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <header>Student Registeration</header>
+            </div>
+            <div class="input-field">
+                <span>
+                <input type="text" name="fname" class="input" placeholder="Firstname" style="margin-left:5px ;" required>
+                <i class="bx bxs-user"></i>
+                <input type="text" name="lname" class="input" placeholder="Lastname" style="margin-left: 5px; margin-bottom: 15px;" required>
+                <i class="bx bxs-user"></i>
+                </span>
+            </div>
+            <div class="input-field">
+                <input type="text" name="email" class="input" placeholder="E-mail" style="margin-bottom: 10px;" required>
+                <i class="bx bxl-gmail" style="position: relative; top: -41px; left: 19px;"></i>
+            </div>
+            <div class="input-field">
+                <input type="text" name="phno" class="input" placeholder="Phone Number" style="margin-bottom: 10px;" maxlength="10" required>
+                <i class="bx bxs-phone" style="position: relative; top: -41px; left: 19px;"></i>
+            </div>
+            <div class="input-field">
+                <input type="text" name="uname" class="input" placeholder="Username" style="margin-bottom: 10px;" required>
+                <i class="bx bxs-user-circle" style="position: relative; top: -41px; left: 19px;"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" name="pword" class="input" placeholder="Password" style="margin-bottom: 10px;" minlength="5" maxlength="8" title="Password must contain at least 8 characters." required>
+                <i class="bx bxs-lock-alt" style="position: relative; top: -41px; left: 19px;"></i>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Register">
+            </div>
+        </div>
+    </div>      
+    </form>
+</body>
+</html>
+{% endblock %}

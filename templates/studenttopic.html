@@ -1,0 +1,44 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment Page</title>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style6.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <title>Timetable</title>
+</head>
+<header>
+    <nav>
+      <ul>
+        <li><a href="studentprof.html">PROFILE</a></li>
+        <li><a href="studentnewtt.html">NEW TIMETABLE</a></li>
+        <li><a href="studentnewtt.html">ASSIGNMENT</a></li>
+        <li><a href="studenttopic.html">TOPICS</a></li>
+        <li><a href="studentabs.html">ABSENTEES</a></li>
+        <li><a href="home.html">LOGOUT</a></li>
+
+      </ul>
+    </nav> 
+    </header>
+<body>
+    <h1 class="heading">TODAY'S TOPICS</h1>
+    <h2 class="headingnote">[NOTE:REFER THE TOPICS MENTIONED BELOW ]</h2>
+    <link rel="stylesheet" type="text/css" href="style8.css">
+  <div class="center">   
+    <div class="assignment-container">
+      <div>
+        <label for="assignment-field" class="assignment-label"><h4> Topics studied today:</h4></label>
+        <label for="assignment-field" class="assignment-label"><h4>(which is feteched from db)</h4></label>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("pexels-olia-danilevich-5088017.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c1ba9b;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+header {
+  background-color: #dcc39cb8;
+  padding: 0 px;
+  justify-content: center;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  align-items: center;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Add a highlight to the active page */
+nav a.active {
+  background-color: #555;
+}
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #f2f2f2;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.profile {
+  background: rgb(232, 206, 178) ;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: double;
+}
+
+.profile-item {
+  display: table-row;
+  align-items: center;
+}
+
+.profile-label,
+.profile-value {
+  display: table-cell;
+  padding: 15px 30px;
+}
+
+.profile-label {
+  font-weight: bold;
+}

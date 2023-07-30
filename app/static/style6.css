@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 100;
+  background-image: url("pexels-olia-danilevich-5088017.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+/* Styles for the navigation bar */
+header {
+  background-color: #dcc39cb8;
+  padding: 0 px;
+  justify-content: center;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  align-items: center;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Add a highlight to the active page */
+nav a.active {
+  background-color: #555;
+}
+
+h1{
+  text-align: center;
+}
+/* Add a highlight to the active page */
+nav a.active {
+  background-color: #555;
+}
+
+h1{
+  text-align: center;
+}
+th {
+  background-color: #370404;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+td {
+  padding: 20px;
+  border: 2px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: #f1eded;
+}
+
+table {
+  border-radius: 10px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 800px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f227;
+  border-radius: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  align-items: center;
+  height: 5vh;
+  text-align: center;
+  padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}

@@ -1,0 +1,78 @@
+{% load static %}   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style6.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+
+    <title>Timetable</title>
+    
+</head>
+<header>
+    <nav>
+      <ul>
+        <li><a href="studentprof.html">PROFILE</a></li>
+        <li><a href="studentnewtt.html">NEW TIMETABLE</a></li>
+        <li><a href="studentassign.html">ASSIGNMENT</a></li>
+        <li><a href="studenttopic.html">TOPICS</a></li>
+        <li><a href="studentabs.html">ABSENTEES</a></li>
+        <li><a href="home.html">LOGOUT</a></li>
+
+      </ul>
+    </nav> 
+    </header>
+<body>
+  <style>
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 10vh; /* Adjust this value if needed */
+    }
+    
+    .heading {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    </style>
+    
+    
+    <div class="center-container">
+      <h1 class="heading">REVISED TIMETABLE</h1>
+    </div>
+        <div class="container">
+            <table>
+                <thead>
+                  <tr>
+                    <th>FIRST HOUR</th>
+                    <th>SECOND HOUR</th>
+                    <th>THIRD HOUR</th>
+                    <th>FOURTH HOUR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>FEBA THOMAS</td>
+                      <td>BINDHU RAJ</td>
+                      <td>SUNIL MOHAN</td>
+                      <td>KAVYA S</td>
+                    </tr>
+                    <tr>
+                      <td>CST 203</td>
+                      <td>EST 400</td>
+                      <td>HUT 100</td>
+                      <td>EET 502</td>
+                    </tr>
+                  </tbody>
+              </table>
+          
+        </div>
+             
+</body>
+</html>

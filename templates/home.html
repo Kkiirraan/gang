@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+</head>
+
+<body>
+  <!-- Add your content here -->
+  <style>
+.shortcut {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #dcc39cb8;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.shortcut:hover {
+  background-color: #d4dab3;
+}
+
+</style>
+
+<div class="container">
+  <h2 style="font-family: 'Sofia', sans-serif;">WeLcOmE To gowithedu</h2>
+  </div>
+<div class="container">
+  <div class="section" style="margin-top:10px; margin-right: 20px;margin-left: 500px;">
+      <p style="color: rgb(0, 0, 0); font-size: 35px;"> This website clearly sketches out the availability of teachers in every classroom for every hours.
+        And it will provide an alert for students to get prepared for the class.
+        This website will give a clear cut idea for the teachers and students about their respective classes</p>
+        <a class="shortcut" href="login.html">START OUT</a>
+      </div>
+</div>
+</body>
+</html>
+{% endblock %}

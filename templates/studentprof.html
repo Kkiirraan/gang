@@ -1,0 +1,59 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="{% static 'style7.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="studentprof.html">PROFILE</a></li>
+        <li><a href="studentnewtt">NEW TIMETABLE</a></li>
+        <li><a href="studentassign.html">ASSIGNMENTS</a></li>
+        <li><a href="studenttopic.html">TOPICS</a></li>
+        <li><a href="staffabs.html">ABSTENTEES</a></li>
+        <li><a href="home.html">LOGOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <h1>Welcome {{ fname }}....!</h1>
+    <div class="center">
+    <div class="profile">
+      <h2>Profile</h2>
+      <div class="profile-item">
+        <span class="profile-label">First Name:</span>
+        <span class="profile-value">{{ fname }}</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">Last Name:</span>
+        <span class="profile-value">{{ lname }}</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">Phone: </span>
+        <span class="profile-value">{{ phno }}</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">Email: </span>
+        <span class="profile-value">{{ email }}</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">username: </span>
+        <span class="profile-value">{{ uname }}</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">Semester: </span>
+        <span class="profile-value">{{ sem }}</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

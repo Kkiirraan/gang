@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    <link rel="stylesheet" href="{% static 'messages.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" method="post">
+    {% csrf_token %}
+    <div class="box">
+      <div class="container">
+          <div class="top-header">
+              <header>Admin Login</header>
+          </div>
+          <div class="input-field">
+              <input type="text" name="uname" class="input" placeholder="Username" maxlength="20" required>
+              <i class="bx bx-user" style="position: relative; top: -30px; left: 18px;"></i>
+          </div>
+          <div class="input-field">
+              <input type="password" name="pword" id="passwordInput" class="input" placeholder="Password" maxlength="8" required>
+              <i class="bx bx-lock-alt" style="position: relative; top: -30px; left: 18px;"></i>
+              <span id="togglePassword" class="toggle-password" onclick="togglePasswordField()">
+                  <i id="eyeIcon" class="bx bx-hide" style="position: relative; top: -55px; left: 145px;"></i>
+              </span>
+          </div>
+          <div class="input-field">
+              <input type="submit" class="submit" value="Login">
+          </div>
+      </div>
+  </div>
+</form>
+<script>
+  function togglePasswordField() {
+      var passwordInput = document.getElementById("passwordInput");
+      var eyeIcon = document.getElementById("eyeIcon");
+
+      if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          eyeIcon.classList.remove("bx-hide");
+          eyeIcon.classList.add("bx-show");
+      } else {
+          passwordInput.type = "password";
+          eyeIcon.classList.remove("bx-show");
+          eyeIcon.classList.add("bx-hide");
+      }
+  }
+</script>
+</body>
+</html>
+{% endblock %}

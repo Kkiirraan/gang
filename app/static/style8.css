@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("pexels-olia-danilevich-5088017.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c1ba9b;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+header {
+  background-color: #dcc39cb8;
+  padding: 0 px;
+  justify-content: center;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  align-items: center;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Add a highlight to the active page */
+nav a.active {
+  background-color: #555;
+}
+
+h1{
+  text-align: center;
+}
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  .assignment-container {
+    width: 250px;
+    height: 250px;
+    margin-top: 150px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assignment-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .assignment-value {
+    color: #555;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 80%;
+    height: 100px;
+  }
+  .heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .headingnote {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
