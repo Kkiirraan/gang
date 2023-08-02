@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Registration(models.Model):
@@ -9,6 +10,8 @@ class Registration(models.Model):
     uname=models.CharField(max_length=15,null=True)
     pword=models.CharField(max_length=8,null=True)
     sem=models.CharField(max_length=100,null=True)
+    def __str__(self):
+            return self.fname
 
 class StaffRegistration(models.Model):
     fname=models.CharField(max_length=50,null=True)
@@ -19,18 +22,23 @@ class StaffRegistration(models.Model):
     pword=models.CharField(max_length=8,null=True)
     dep=models.CharField(max_length=100,null=True)
     subcode=models.CharField(max_length=100,null=True)
-
+    def __str__(self):
+            return self.fname
 
 class Assignments(models.Model):
     assignments=models.TextField()
     topics=models.TextField()
     absentees=models.TextField(max_length=100,null=True)
+    def __str__(self):
+            return self.assignments
 
 class TimeTable(models.Model):
-    first_hour=models.CharField(max_length=10,null=True)
-    second_hour=models.CharField(max_length=10,null=True)
-    third_hour=models.CharField(max_length=10,null=True) 
-    fourth_hour=models.CharField(max_length=10,null=True) 
-
-
-    
+    first_hour=models.IntegerField(default=0)
+    second_hour=models.IntegerField(default=0)
+    third_hour=models.IntegerField(default=0) 
+    fourth_hour=models.IntegerField(default=0) 
+    date=models.DateField(auto_now=True)
+    def __str__(self):
+            return self.first_hour
+    # subcode=subcode,
+            # fname=fname

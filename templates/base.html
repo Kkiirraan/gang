@@ -2,9 +2,9 @@
     <nav>
       <ul>
         <li><a href='/'>Home</a></li>
-        <li><a href='/about'>About Us</a></li>
-        <li><a href='/login'>Login</a></li>
-        <li><a href='/studentreg'>Register</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'loginmain' %}">Login</a></li>
+        <li><a href="{% url 'studentreg'%}">Register</a></li>
       </ul>
     </nav>
   </header>

@@ -12,15 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap" rel="stylesheet">
 
 </head>
+
   <header>
     <nav>
       <ul>
         <li><a href="studentprof.html">PROFILE</a></li>
-        <li><a href="studentnewtt">NEW TIMETABLE</a></li>
-        <li><a href="studentassign.html">ASSIGNMENTS</a></li>
+        <li><a href="{% url 'studentnewtt' %}">NEW TIMETABLE</a></li>
+        <li><a href="{% url 'studentassign' %}">ASSIGNMENTS</a></li>
         <li><a href="studenttopic.html">TOPICS</a></li>
         <li><a href="staffabs.html">ABSTENTEES</a></li>
-        <li><a href="home.html">LOGOUT</a></li>
+        <li><a href="{% url 'logout' %}">LOGOUT</a></li>
       </ul>
     </nav>
   </header>

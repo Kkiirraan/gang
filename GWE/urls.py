@@ -21,26 +21,7 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('studentreg',views.studentreg),
-    path('student/',views.login),
-    path('about/',views.about),
-    path('login/',views.loginmain),
-    path('register/',views.register),
-    path('studentprof/',views.studentprof),
-    path('studentnewtt/',views.studentnewtt),
-    path('studenttopic/',views.studenttopic),
-    path('studentassign/',views.studentassign),
-    path('studentabs/',views.studentabs),
-    path('admin1/',views.adminlogin),
-    path('staff/',views.stafflogin),
-    path('staffreg/',views.staffreg),
-    path('staffprof/',views.staffprof),
-    path('staffnewtt/',views.staffnewtt),
-    path('stafftopic/',views.stafftopic),
-    path('staffassign/',views.staffassign),
-    path('sample/',views.sample),
-    path('staffavail/',views.staffavail),
-    
+    path('',include('app.urls')),
+   
 
 ]

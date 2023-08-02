@@ -8,15 +8,7 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="">PROFILE</a></li>
-        <li><a href="staffavail.html">AVAILABILITY</a></li>
-        <li><a href="staffnewtt.html">NEW TIMETABLE</a></li>
-        <li><a href="staffassign.html">ASSIGNMENTS</a></li>
-        <li><a href="stafftopic.html">TOPICS</a></li>
-        <li><a href="staffabs.html">ABSTENTEES</a></li>
-        <li><a href="home.html">LOGOUT</a></li>
-      </ul>
+    {% include 'staffbase.html' %}
     </nav>
   </header>
   <style>
@@ -25,10 +17,19 @@
     }
   </style>
 </head>
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
   <div class="center">
+  {{id}}{{timtable.first_hour}}
     <h2>MARK AVAILABILITY</h2>
     </div>
-    <form action="" method="post">
+    <form action="{%  url 'staffavail' %}" method="post">
       {% csrf_token %}
   <table>
     <tr>
@@ -38,46 +39,60 @@
     <tr>
       <td>FIRST HOUR : </td>
       <td>
+        {% if timetable.first_hour == id or timetable.first_hour == 0 %}
         <label>
-          <input type="radio" name="first" value="yes"> Yes
+          <input type="radio" name="first" value="1"> Yes
         </label>
         <label>
-          <input type="radio" name="first" value="no"> No
+          <input type="radio" name="first" value="0"> No
         </label>
+        {%endif%}
       </td>
     </tr>
     <tr>
-      <td>SECOND HOUR : </td>
+        <td>
+        SECOND HOUR : </td>
+        {% if timetable.second_hour == id or timetable.second_hour == 0 %}
+
       <td>
         <label>
-          <input type="radio" name="seocnd" value="yes"> Yes
+          <input type="radio" name="second" value="1"> Yes
         </label>
         <label>
-          <input type="radio" name="second" value="no"> No
+          <input type="radio" name="second" value="0"> No
         </label>
       </td>
+      {%endif%}
     </tr>
     <tr>
-      <td>THIRD HOUR : </td>
+        <td>
+        THIRD HOUR : </td>
+        {% if timetable.third_hour == id or timetable.third_hour == 0 %}
+
       <td>
         <label>
-          <input type="radio" name="third" value="yes"> Yes
+          <input type="radio" name="third" value="1"> Yes
         </label>
         <label>
-          <input type="radio" name="third" value="no"> No
+          <input type="radio" name="third" value="0"> No
         </label>
       </td>
+      {%endif%}
     </tr>
     <tr>
-      <td>FOURTH HOUR : </td>
+        <td>
+        FOURTH HOUR : </td>
+        {% if timetable.fourth_hour == id or timetable.fourth_hour == 0 %}
+
       <td>
         <label>
-          <input type="radio" name="fourth" value="yes"> Yes
+          <input type="radio" name="fourth" value="1"> Yes
         </label>
         <label>
-          <input type="radio" name="fourth" value="no"> No
+          <input type="radio" name="fourth" value="0"> No
         </label>
       </td>
+      {%endif%}
     </tr>
   </table>
   <button type="submit">Submit</button>
