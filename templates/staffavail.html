@@ -39,7 +39,7 @@
     <tr>
       <td>FIRST HOUR : </td>
       <td>
-        {% if timetable.first_hour == id or timetable.first_hour == 0 %}
+        {% if timetable.first_hour == id or timetable.first_hour == 0 or timetable.first_hour == None %}
         <label>
           <input type="radio" name="first" value="1"> Yes
         </label>
@@ -52,7 +52,7 @@
     <tr>
         <td>
         SECOND HOUR : </td>
-        {% if timetable.second_hour == id or timetable.second_hour == 0 %}
+        {% if timetable.second_hour == id or timetable.second_hour == 0 or timetable.second_hour == None %}
 
       <td>
         <label>
@@ -67,7 +67,7 @@
     <tr>
         <td>
         THIRD HOUR : </td>
-        {% if timetable.third_hour == id or timetable.third_hour == 0 %}
+        {% if timetable.third_hour == id or timetable.third_hour == 0 or timetable.third_hour == None %}
 
       <td>
         <label>
@@ -82,7 +82,7 @@
     <tr>
         <td>
         FOURTH HOUR : </td>
-        {% if timetable.fourth_hour == id or timetable.fourth_hour == 0 %}
+        {% if timetable.fourth_hour == id or timetable.fourth_hour == 0 or timetable.fourth_hour == None %}
 
       <td>
         <label>
